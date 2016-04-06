@@ -19,7 +19,7 @@ RUN apt-get update -y              \
   git                           \
   wget
 
-RUN git clone https://github.com/tm2013/Radium.git 
+RUN git clone https://github.com/tm2013/Radium.git && cd Radium
 
 VOLUME /Radium
 
