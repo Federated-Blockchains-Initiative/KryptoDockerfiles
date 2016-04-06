@@ -28,7 +28,7 @@ EXPOSE 27913 27914
 
 WORKDIR /Radium
 
-ENTRYPOINT qmake -makefile && \
+ENTRYPOINT qmake -makefile USE_O3=1 RELEASE=1 && \
  make && \
  cd src && \
  make -f makefile.unix && \
